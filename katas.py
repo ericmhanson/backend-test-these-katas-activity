@@ -7,10 +7,10 @@ def multiply(x, y):
     """ Return the result of multiplying x by y. """
     result = 0
 
-    for _ in range(x):
-        result = add(result, y)
+    for _ in range(abs(y)):
+        result = add(result, x)
 
-    return result
+    return -result if y < 0 else result
 
 
 def power(x, n):
